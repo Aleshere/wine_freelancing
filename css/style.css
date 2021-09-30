@@ -634,7 +634,7 @@ a:hover {
 
 .hero-area {
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 72px);
   position: relative;
   display: flex;
   justify-content: center;
@@ -665,11 +665,13 @@ a:hover {
   text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 20px;
+  padding: 0 100px;
 }
 
 @media (max-width: 480px) {
   .hero-area .block h1 {
     font-size: 60px;
+    padding: 0;
   }
 }
 
@@ -949,6 +951,7 @@ a:hover {
 .contact-form textarea.form-control {
   padding: 10px;
   height: 120px;
+  max-width: 100%;
 }
 
 .contact-form input:hover,
