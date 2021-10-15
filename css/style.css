@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600');
 
 :root {
-  /* --background-color: #353b43; */
+  --background-color: rgba(250, 249, 254);
   --body-text: #737f8a;
   /* --primary-color: #57cbcc; */
   --primary-color: #d4ba4d;
@@ -13,7 +13,7 @@
   --success-text: #6cb670;
   --post-meta: #4e595f;
   --arrows-gray: #dedede;
-  --navigation-background: #1d2024;
+  --navigation-background: rgba(250, 249, 254);
   --background-dark: #242930;
   /* --background-dark: #9b96a3; */
   --social-icon-text: #29292e;
@@ -630,6 +630,18 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.birdcage-logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+}
+
+.birdcage-logo img {
+  width: 133px;
+  height: 200px;
 }
 
 .hero-area {
