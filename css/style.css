@@ -4,18 +4,16 @@
 :root {
   --background-color: rgba(250, 249, 254);
   --body-text: #737f8a;
-  /* --primary-color: #57cbcc; */
-  --primary-color: #d4ba4d;
+  --primary-color: #5c0100;
   --white: #fff;
   --black: #000;
   --gray: #ddd;
-  --section-background: #292f36;
+  --section-background: #e7e3ee;
   --success-text: #6cb670;
   --post-meta: #4e595f;
   --arrows-gray: #dedede;
   --navigation-background: rgba(250, 249, 254);
   --background-dark: #242930;
-  /* --background-dark: #9b96a3; */
   --social-icon-text: #29292e;
 }
 
@@ -137,7 +135,7 @@ a:hover {
   border-radius: 0;
   padding: 5px 10px;
   border: 0 none;
-  color: var(--gray);
+  color: var(--primary-color);
 }
 
 .form-control:focus {
@@ -146,22 +144,22 @@ a:hover {
 
 .form-control::-webkit-input-placeholder {
   /*  Chrome, Safari, Opera  */
-  color: var(--gray);
+  color: var(--primary-color);
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: var(--gray);
+  color: var(--primary-color);
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--gray);
+  color: var(--primary-color);
 }
 
 .form-control:-ms-input-placeholder {
   /*  Internet Explorer  */
-  color: var(--gray);
+  color: var(--primary-color);
 }
 
 .border {
@@ -211,7 +209,7 @@ a:hover {
 }
 
 .bg-one {
-  background-color: var(--background-color);
+  background-color: var(--white);
 }
 
 .bg-dark {
@@ -720,7 +718,7 @@ a:hover {
 
 .overlay::before {
   content: '';
-  background: rgba(0, 0, 0, 0.63);
+  background: rgba(0, 0, 0, 0.44);
   position: absolute;
   top: 0;
   right: 0;
@@ -950,6 +948,10 @@ a:hover {
   padding-top: 50px;
 }
 
+.contact-details {
+  padding-top: 25px;
+}
+
 .contact-form {
   margin-bottom: 60px;
 }
@@ -982,6 +984,13 @@ a:hover {
 
 .google-map #map-canvas {
   height: 400px;
+}
+
+.contact-info h3,
+.contact-info i,
+.contact-info span {
+  color: var(--primary-color);
+  font-size: 20px;
 }
 
 .contact-info p {
@@ -1022,34 +1031,6 @@ a:hover {
 #map {
   height: 370px;
   width: 100%;
-}
-
-/*=================================================================
-  Item counter section
-==================================================================*/
-.counters-item {
-  padding: 25px 0;
-  margin-bottom: 10px;
-  background: var(--section-background);
-}
-
-.counters-item i {
-  margin-bottom: 10px;
-  font-size: 40px;
-  display: inline-block;
-}
-
-.counters-item span {
-  display: block;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 50px;
-  color: var(--primary-color);
-}
-
-.counters-item h3 {
-  font-size: 20px;
-  margin: 0;
 }
 
 /*=================================================================
@@ -1261,31 +1242,6 @@ a:hover {
   margin-bottom: 20px;
   width: 55px;
   transition: all 0.3s ease 0s;
-}
-
-/*=================================================================
-  Our skills
-==================================================================*/
-.skill-bar p {
-  font-size: 18px;
-  margin-bottom: 0;
-}
-
-.skill-bar p span {
-  font-style: italic;
-  font-size: 30px;
-  color: rgba(187, 187, 187, 0.34);
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.skill-bar .progress {
-  height: 6px;
-  border-radius: 0;
-}
-
-.skill-bar .progress .progress-bar {
-  background: var(--primary-color);
 }
 
 /*=================================================================
